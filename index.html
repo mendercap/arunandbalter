@@ -230,11 +230,10 @@ $b_pov[[switch to Arun]&lt;a|]
 }
 {
 (link: &quot;pull the lever&quot;)[
-	(if: $portcullis is true)[(set: $portcullis to false)]
-    (else:)[(set: $portcullis to true)]
-    (goto: &quot;main&quot;)]
+	(if: $portcullis is true)[(set: $portcullis to false)(goto: &quot;open portcullis&quot;)]
+    (else:)[(set: $portcullis to true)(goto: &quot;close portcullis&quot;)]]
 }</tw-passagedata>
-<tw-passagedata pid="6" name="fountain" tags="" position="630,303">&lt;p&gt;A ruined gargoyle sits atop the fountain. Water no longer runs through it mouth. What little of it remains within the fountain must have been deposited by rain and sea breeze; it is rank and brimming with algae.&lt;/p&gt;&lt;p&gt;A path to the [(font: &quot;Equity Caps&quot;)[(colour: #AE4315)[west]]]&lt;togarden| will take you back to the garden.(click: ?togarden)[
+<tw-passagedata pid="6" name="fountain" tags="" position="630,303">&lt;p&gt;A ruined gargoyle sits atop the fountain. Water no longer runs through its mouth. What little of it remains within the fountain must have been deposited by rain and sea breeze; it is rank and brimming with algae.&lt;/p&gt;&lt;p&gt;A path to the [(font: &quot;Equity Caps&quot;)[(colour: #AE4315)[west]]]&lt;togarden| will take you back to the garden.(click: ?togarden)[
 	$a_pov[(set: $a_location to &quot;garden&quot;)]
 	$b_pov[(set: $b_location to &quot;garden&quot;)]
     (goto: &quot;main&quot;)]&lt;/p&gt;&lt;p&gt;To the [(font: &quot;Equity Caps&quot;)[(colour: #AE4315)[north]]]&lt;totower|, a set of stairs leads up to the tower.(click: ?totower)[
@@ -260,7 +259,7 @@ $b_pov[[switch to Arun]&lt;a|]
     (set: $a_pov to true)
     (goto: &quot;main&quot;)]
 }</tw-passagedata>
-<tw-passagedata pid="7" name="pavilion" tags="" position="375,301">&lt;p&gt;Eight stone pillars form the pavilion supports. Gears and metal plates lie strewn all around them. The fallen golem did not warrant a burial.&lt;/p&gt;&lt;p&gt;Stonecut plates cover the floor in a simple pattern. The plate in the middle stands out taller than the rest. Scuff marks crisscross its surface.&lt;/p&gt;&lt;p&gt;The path back lies to the [(font: &quot;Equity Caps&quot;)[(colour: #AE4315)[east]].]&lt;togarden|(click: ?togarden)[
+<tw-passagedata pid="7" name="pavilion" tags="" position="375,301">&lt;p&gt;Eight stone pillars form the pavilion supports. Gears and metal plates lie strewn all around them: the remnants of a golem.&lt;/p&gt;&lt;p&gt;Stonecut plates cover the floor in a simple pattern. The plate in the middle stands out taller than the rest. Scuff marks crisscross its surface.&lt;/p&gt;&lt;p&gt;The path back lies to the [(font: &quot;Equity Caps&quot;)[(colour: #AE4315)[east]].]&lt;togarden|(click: ?togarden)[
 	$a_pov[(set: $a_location to &quot;garden&quot;)]
 	$b_pov[(set: $b_location to &quot;garden&quot;)]
     (goto: &quot;main&quot;)]&lt;/p&gt;{&lt;p&gt;
@@ -441,6 +440,10 @@ $b_pov[[switch to Arun]&lt;a|]
 [[continue-&gt;main]]</tw-passagedata>
 <tw-passagedata pid="18" name="good end" tags="" position="802,52">&lt;p&gt;Your fingers brush against the cool surface of the Eye of Zora when you feel a spike of pain drive through your hand. Before the darkness comes to steal away your senses, you feel a pair of hands pull you back. You and your brother stumble back and fall to the stonework floor.&lt;/p&gt;&lt;p&gt;You wake up to a loud crack as your head is thrown to the side. Before your brother can slap you a second time, you wrestle him off you and let him pull you to your feet.&lt;/p&gt;&lt;p&gt;Whatever trap was set by the old wizard has been sprung, and you live still. The Eye of Zora is yours!&lt;/p&gt;</tw-passagedata>
 <tw-passagedata pid="19" name="bad end" tags="" position="801,177">&lt;p&gt;Your fingers touch the cold surface of the Eye of Zora, and a shock of pain rushes through your hand. For one final moment, you feel as if your entire body is submerged in a boiling cauldron.&lt;/p&gt;&lt;p&gt;Too late the darkness comes to steal away your senses.&lt;/p&gt;</tw-passagedata>
+<tw-passagedata pid="20" name="open portcullis" tags="" position="0.0002,483">&lt;p&gt;The portcullis rattles open.&lt;/p&gt;
+[[continue-&gt;main]]</tw-passagedata>
+<tw-passagedata pid="21" name="close portcullis" tags="" position="0.00030000000000000003,608">&lt;p&gt;With a rattle and a clang, the portcullis slides back down to block the passage.&lt;/p&gt;
+[[continue-&gt;main]]</tw-passagedata>
 </tw-storydata>
 
 
